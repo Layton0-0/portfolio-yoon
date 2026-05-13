@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-mono text-gray-400 text-xl mb-3"
         >
-          choi@backend:~$
+          yoon@backend:~$
         </motion.p>
 
         {/* Big whoami */}

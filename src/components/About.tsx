@@ -14,7 +14,7 @@ export default function About() {
         {/* Title */}
         <motion.div {...fadeUp} transition={{ duration: 0.5 }} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            백엔드 개발자 &amp; 풀스택 엔지니어
+            Backend Developer &amp; Full-Stack Engineer
           </h2>
           <div className="w-16 h-1 mx-auto mb-6 rounded-full" style={{ background: 'linear-gradient(to right, #2563eb, #0d9488)' }} />
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">

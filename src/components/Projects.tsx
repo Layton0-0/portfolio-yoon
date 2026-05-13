@@ -18,7 +18,7 @@ export default function Projects() {
             $ git log --oneline --all | head -10
           </p>
           <h2 className="font-mono text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            &lt;&gt; 개인 프로젝트
+            &lt;&gt; Personal Projects
           </h2>
           <div className="w-16 h-1 mx-auto rounded-full" style={{ background: 'linear-gradient(to right, #2563eb, #0d9488)' }} />
         </motion.div>

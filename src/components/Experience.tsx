@@ -16,7 +16,7 @@ export default function Experience() {
           <p className="font-mono text-emerald-600 text-sm mb-3">
             $ cat /var/log/career.log | grep experience
           </p>
-          <h2 className="font-mono text-4xl md:text-5xl font-bold text-gray-900 mb-4">./경력</h2>
+          <h2 className="font-mono text-4xl md:text-5xl font-bold text-gray-900 mb-4">./experience</h2>
           <div className="w-16 h-1 mx-auto rounded-full" style={{ background: 'linear-gradient(to right, #2563eb, #0d9488)' }} />
         </motion.div>
 

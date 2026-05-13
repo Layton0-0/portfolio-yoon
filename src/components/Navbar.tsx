@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#home" className="font-mono text-lg font-semibold text-gray-900">
-          choi<span className="text-blue-600">.dev</span>
+          yoon<span className="text-blue-600">.dev</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="font-mono text-white text-lg font-semibold mb-2">
-              choi<span className="text-blue-400">.dev</span>
+              yoon<span className="text-blue-400">.dev</span>
             </p>
             <p className="text-sm leading-relaxed">
               Spring Boot 기반 엔터프라이즈 개발 4년차.<br />

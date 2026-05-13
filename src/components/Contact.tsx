@@ -36,9 +36,9 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <p className="font-mono text-emerald-600 text-sm mb-3">
-            $ ping contact@choi.dev --ttl=unlimited
+            $ ping contact@yoon.dev --ttl=unlimited
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">연락하기</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Get in Touch</h2>
           <div className="w-16 h-1 mx-auto mb-6 rounded-full" style={{ background: 'linear-gradient(to right, #2563eb, #0d9488)' }} />
           <p className="text-gray-500 text-lg">협업이나 채용 문의는 언제든 환영합니다.</p>
         </motion.div>

@@ -35,7 +35,7 @@ export default function Skills() {
             $ grep -r &quot;expertise&quot; /var/log/career.log
           </p>
           <h2 className="font-mono text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            ./기술스택 --list
+            ./tech-stack --list
           </h2>
           <div className="w-16 h-1 mx-auto mb-6 rounded-full" style={{ background: 'linear-gradient(to right, #2563eb, #0d9488)' }} />
           <p className="font-mono text-gray-500 text-base">
