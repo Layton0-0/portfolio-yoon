@@ -1,0 +1,211 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);background:transparent;color:var(--color-text-primary)}
+.wrap{max-width:680px;padding:2rem 0}
+.hero{border-bottom:0.5px solid var(--color-border-tertiary);padding-bottom:2rem;margin-bottom:2rem}
+.hero-name{font-size:28px;font-weight:500;letter-spacing:-0.5px;margin-bottom:4px}
+.hero-title{font-size:15px;color:var(--color-text-secondary);margin-bottom:1.2rem}
+.hero-desc{font-size:14px;line-height:1.75;color:var(--color-text-secondary);max-width:560px}
+.contact-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:1rem}
+.contact-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--color-text-secondary);text-decoration:none}
+.contact-item i{font-size:15px}
+.section{margin-bottom:2.5rem}
+.section-label{font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:1rem;padding-bottom:6px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}
+.stack-card{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px}
+.stack-card-label{font-size:11px;color:var(--color-text-tertiary);margin-bottom:4px;font-weight:500}
+.stack-card-value{font-size:13px;color:var(--color-text-primary);line-height:1.5}
+.exp-block{margin-bottom:2rem}
+.exp-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;margin-bottom:2px}
+.exp-company{font-size:15px;font-weight:500}
+.exp-period{font-size:12px;color:var(--color-text-tertiary)}
+.exp-role{font-size:13px;color:var(--color-text-secondary);margin-bottom:10px}
+.proj-block{border-left:2px solid var(--color-border-secondary);padding-left:14px;margin-bottom:1.5rem}
+.proj-title{font-size:14px;font-weight:500;margin-bottom:2px}
+.proj-period{font-size:12px;color:var(--color-text-tertiary);margin-bottom:6px}
+.proj-desc{font-size:13px;color:var(--color-text-secondary);line-height:1.65;margin-bottom:6px}
+.bullet-list{list-style:none;padding:0}
+.bullet-list li{font-size:13px;color:var(--color-text-secondary);line-height:1.65;padding-left:14px;position:relative;margin-bottom:3px}
+.bullet-list li::before{content:"·";position:absolute;left:0;color:var(--color-text-tertiary)}
+.badge-row{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.badge{font-size:11px;padding:3px 8px;border-radius:20px;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);color:var(--color-text-secondary)}
+.badge.highlight{background:#E6F1FB;border-color:#B5D4F4;color:#185FA5}
+.personal-proj{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem;margin-bottom:1rem}
+.personal-proj-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.personal-proj-name{font-size:14px;font-weight:500}
+.personal-proj-period{font-size:12px;color:var(--color-text-tertiary)}
+.personal-proj-desc{font-size:13px;color:var(--color-text-secondary);line-height:1.65;margin-bottom:8px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.edu-row{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;padding:8px 0;border-bottom:0.5px solid var(--color-border-tertiary)}
+.edu-row:last-child{border-bottom:none}
+.edu-name{font-size:14px;font-weight:500}
+.edu-detail{font-size:13px;color:var(--color-text-secondary);margin-top:1px}
+.edu-period{font-size:12px;color:var(--color-text-tertiary);flex-shrink:0}
+.cert-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:0.5px solid var(--color-border-tertiary)}
+.cert-row:last-child{border-bottom:none}
+.cert-icon{color:var(--color-text-tertiary);font-size:16px}
+.cert-name{font-size:14px;font-weight:500}
+.cert-meta{font-size:12px;color:var(--color-text-tertiary)}
+.divider{height:0.5px;background:var(--color-border-tertiary);margin:2rem 0}
+.highlight-num{font-weight:500;color:var(--color-text-primary)}
+</style>
+
+<div class="wrap">
+
+<div class="hero">
+  <p class="hero-name">최윤정</p>
+  <p class="hero-title">백엔드 · 풀스택 웹 개발자 · 4년차</p>
+  <p class="hero-desc">Spring Boot 기반 엔터프라이즈 시스템 개발 및 운영 경험을 보유하고 있습니다. 타이어 생산관리 코어 시스템부터 시스템 간 연동 API, DevOps 파이프라인 구축까지 전 사이클을 담당했습니다. LLM을 활용한 AI 서비스 개발에도 직접 도전하며 지능형 웹서비스 개발 역량을 넓히고 있습니다.</p>
+  <div class="contact-row">
+    <a class="contact-item" href="mailto:yeshan0224@kakao.com"><i class="ti ti-mail" aria-hidden="true"></i>yeshan0224@kakao.com</a>
+    <a class="contact-item" href="https://github.com/Layton0-0" target="_blank"><i class="ti ti-brand-github" aria-hidden="true"></i>github.com/Layton0-0</a>
+    <a class="contact-item" href="https://layton0-0.tistory.com/" target="_blank"><i class="ti ti-pencil" aria-hidden="true"></i>layton0-0.tistory.com</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Tech Stack</div>
+  <div class="stack-grid">
+    <div class="stack-card"><div class="stack-card-label">Backend</div><div class="stack-card-value">Java, Spring Boot, MyBatis, Spring Data JPA, Spring Security</div></div>
+    <div class="stack-card"><div class="stack-card-label">Frontend</div><div class="stack-card-value">React, JSP, JavaScript, jQuery, HTML/CSS</div></div>
+    <div class="stack-card"><div class="stack-card-label">Database</div><div class="stack-card-value">Oracle (RDS), MySQL, MariaDB</div></div>
+    <div class="stack-card"><div class="stack-card-label">Infra · DevOps</div><div class="stack-card-value">AWS EC2, Docker, Docker Compose, Jenkins, Tomcat, Apache</div></div>
+    <div class="stack-card"><div class="stack-card-label">Monitoring</div><div class="stack-card-value">Prometheus, Grafana</div></div>
+    <div class="stack-card"><div class="stack-card-label">AI · 기타</div><div class="stack-card-value">Ollama + Gemma3, WebClient, MapStruct, JWT</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">경력</div>
+
+  <div class="exp-block">
+    <div class="exp-header">
+      <span class="exp-company">(주)한국네트웍스</span>
+      <span class="exp-period">2022.09 – 현재 · 약 3년</span>
+    </div>
+    <div class="exp-role">웹 개발자 · 백엔드/풀스택 | 주요 고객사: 한국타이어앤테크놀로지</div>
+
+    <div class="proj-block">
+      <div class="proj-title">타이어 생산 관리 시스템 · 운영 및 고도화</div>
+      <div class="proj-period">2023.09 – 현재</div>
+      <div class="proj-desc">타이어 고유 정보(Master Data) 생성·버전 관리 코어 시스템 유지보수 및 연구소·공장·판매 시스템 간 데이터 연동 API 개발. 물리 서버에서 AWS로의 이전 안정화 참여.</div>
+      <ul class="bullet-list">
+        <li><span class="highlight-num">타이어 스펙 수익성 시뮬레이터 연동</span> — DB Link + API + Jenkins Batch 구성으로 수기 계산 대비 <span class="highlight-num">2주 → 1초 이내</span>로 단축</li>
+        <li><span class="highlight-num">양산 목표시장 SAP 자동 연동</span> — 결재 완료 시 Jenkins → Spring EAI → SAP 자동 반영, 휴먼 에러 및 데이터 시점 차이 제거</li>
+        <li><span class="highlight-num">타이어 메타데이터 자동 추천</span> — Oracle View 기반 조건 매칭으로 연구소 수작업 <span class="highlight-num">100% 대체</span></li>
+        <li><span class="highlight-num">지역별 품질 인증서 연동 자동화</span> — Oracle View 설계 및 연동으로 중복 인증 요청 <span class="highlight-num">월 2,000건 → 0건</span></li>
+        <li>IDC → AWS Amazon Linux 서버 이전 안정화, 엔드포인트 변경 및 Prometheus/Grafana 모니터링 구축</li>
+      </ul>
+      <div class="badge-row">
+        <span class="badge">Spring Boot</span><span class="badge">MyBatis</span><span class="badge">Oracle RDS</span><span class="badge">Jenkins</span><span class="badge">Docker</span><span class="badge">AWS EC2</span><span class="badge">Prometheus</span><span class="badge">Grafana</span><span class="badge">SAP EAI</span>
+      </div>
+    </div>
+
+    <div class="proj-block">
+      <div class="proj-title">제조 대기업 생산직 전용 모바일 그룹웨어 리뉴얼</div>
+      <div class="proj-period">2023.09 – 현재 (병행)</div>
+      <div class="proj-desc">한국타이어앤테크놀로지 전사 생산직 대상 레거시 모바일 그룹웨어를 신규 백엔드·관리자·연동 아키텍처로 전환. 모바일 앱·Admin Web·외부 시스템 연동·배포 자동화 전 영역 담당.</div>
+      <ul class="bullet-list">
+        <li>WebSocket 실시간 채팅, Firebase 앱 Push 알림 백엔드 API 개발</li>
+        <li>AWS EC2 + Docker 기반 WAS 구축 및 Jenkins 파이프라인 자동화</li>
+        <li>릴리스·장애 대응, 사용자 관리, 시스템 안정화 운영</li>
+      </ul>
+      <div class="badge-row">
+        <span class="badge">Spring Boot</span><span class="badge">WebSocket</span><span class="badge">Firebase</span><span class="badge">AWS EC2</span><span class="badge">Docker</span><span class="badge">Jenkins</span>
+      </div>
+    </div>
+
+    <div class="proj-block">
+      <div class="proj-title">전사 그룹웨어 · 사내 메신저 운영</div>
+      <div class="proj-period">2022.12 – 2023.08</div>
+      <div class="proj-desc">글로벌 그룹사 인원이 사용하는 메일·전자결재·조직도 시스템 운영. 장애 대응, 사용자 관리, 시스템 최적화 담당.</div>
+      <div class="badge-row">
+        <span class="badge">Linux</span><span class="badge">Apache</span><span class="badge">Tomcat</span><span class="badge">Oracle DB</span><span class="badge">IBM Notes</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">개인 프로젝트</div>
+
+  <div class="personal-proj">
+    <div class="personal-proj-header">
+      <span class="personal-proj-name">Neekly Report</span>
+      <span class="personal-proj-period">2025.07 – 2025.08</span>
+    </div>
+    <p class="personal-proj-desc">자연어 입력에서 LLM으로 일정을 자동 추출·구조화하고 AI 기반 주간 리포트를 생성하는 스마트 캘린더 시스템. Backend + 인프라 담당 (3인 팀).</p>
+    <ul class="bullet-list">
+      <li>Local Ollama + Gemma3:12b 로컬 배포로 데이터 보안 강화, 자연어 → JSON 구조화 파이프라인 구축</li>
+      <li>@Async + TransactionSynchronization으로 즉시 응답 + 백그라운드 LLM 처리 아키텍처 설계</li>
+      <li>Spring Security + JWT (Access/Refresh Token), Custom EntryPoint로 Stateless 인증 시스템 구현</li>
+      <li>Jenkins Pipeline + Docker Compose + Oracle Cloud Ubuntu 기반 CI/CD 및 실서비스 운영 환경 구축</li>
+    </ul>
+    <div class="badge-row">
+      <span class="badge highlight">LLM · AI</span><span class="badge">Spring Boot 3.5</span><span class="badge">Java 21</span><span class="badge">Spring Data JPA</span><span class="badge">MariaDB</span><span class="badge">Ollama</span><span class="badge">Docker Compose</span><span class="badge">Jenkins</span><span class="badge">Oracle Cloud</span>
+    </div>
+  </div>
+
+  <div class="personal-proj">
+    <div class="personal-proj-header">
+      <span class="personal-proj-name">주식 자동 매매 수익 분석 시스템</span>
+      <span class="personal-proj-period">개인 프로젝트</span>
+    </div>
+    <p class="personal-proj-desc">한국투자증권 Open API를 연동한 주식 투자 수익 분석 및 자동 매매 시스템. Backend + 예측 서비스 개발.</p>
+    <ul class="bullet-list">
+      <li>Spring Boot 기반 매매 API 연동 Backend, Python 기반 데이터 수집·예측 서비스 분리 구성</li>
+      <li>React + Vite 기반 대시보드 프론트엔드, MariaDB 기반 데이터 관리</li>
+    </ul>
+    <div class="badge-row">
+      <span class="badge">Spring Boot</span><span class="badge">Python</span><span class="badge">React</span><span class="badge">MariaDB</span><span class="badge">한국투자증권 Open API</span>
+    </div>
+  </div>
+
+  <div class="personal-proj">
+    <div class="personal-proj-header">
+      <span class="personal-proj-name">TripDream · 브루맵 · 시반</span>
+      <span class="personal-proj-period">2022.04 – 2023.08</span>
+    </div>
+    <p class="personal-proj-desc">여행 일정 웹서비스(TripDream), 주변 술집 추천(브루맵), 운동 루틴 추천 앱(시반) — 교육 과정 및 팀 프로젝트. Spring Boot + JPA 기반, 각각 JWT 인증·AWS S3·Kakao 지도 API·React Native 등 활용.</p>
+    <div class="badge-row">
+      <span class="badge">Spring Boot</span><span class="badge">JPA</span><span class="badge">React Native</span><span class="badge">MySQL</span><span class="badge">Docker</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">학력 · 교육</div>
+  <div class="edu-row">
+    <div><div class="edu-name">아주대학교</div><div class="edu-detail">미디어학과 (주전공) · 영어영문학과 (부전공)</div></div>
+    <span class="edu-period">2016.03 – 2020.02</span>
+  </div>
+  <div class="edu-row">
+    <div><div class="edu-name">HfWU Nuertingen-Geislingen University</div><div class="edu-detail">독일 교환학생 파견 · 수업 언어: 영어</div></div>
+    <span class="edu-period">2018.06 – 2019.02</span>
+  </div>
+  <div class="edu-row">
+    <div><div class="edu-name">K-digital · 지능형 웹서비스 풀스택 개발</div><div class="edu-detail">삼성멀티캠퍼스 · 960시간</div></div>
+    <span class="edu-period">2021.12 – 2022.06</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">자격 · 어학</div>
+  <div class="cert-row">
+    <i class="ti ti-award cert-icon" aria-hidden="true"></i>
+    <div>
+      <div class="cert-name">정보처리기사</div>
+      <div class="cert-meta">취득 2022.06.17</div>
+    </div>
+  </div>
+  <div class="cert-row">
+    <i class="ti ti-language cert-icon" aria-hidden="true"></i>
+    <div>
+      <div class="cert-name">TOEIC Speaking · Intermediate High</div>
+      <div class="cert-meta">2025.11 – 2027.11 · 독일 교환학생 경험 (영어 수업)</div>
+    </div>
+  </div>
+</div>
+
+</div>
