@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
+  --font-mono: 'D2Coding', monospace;
 }
 
 html {
@@ -12,4 +12,17 @@ html {
 body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* 큰 섹션 제목만 모노, h3 이하는 본문과 동일한 sans */
+h1,
+h2 {
+  font-family: var(--font-mono);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
 }
