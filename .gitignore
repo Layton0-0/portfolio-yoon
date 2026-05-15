@@ -31,6 +31,12 @@ Thumbs.db
 *.swp
 *.swo
 .vscode/*.log
+.turbo/
+.eslintcache
+.cache/
+
+# Test / coverage
+coverage/
 
 # TypeScript incremental (if emitted outside node_modules)
 *.tsbuildinfo
