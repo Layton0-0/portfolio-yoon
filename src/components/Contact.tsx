@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Mail, Github, BookOpen, Send } from 'lucide-react'
+import { Mail, Github, BookOpen } from 'lucide-react'
 import { personal, education, certifications } from '../data/portfolio'
 
 const contactCards = [
@@ -114,25 +114,6 @@ export default function Contact() {
             </div>
           </motion.div>
         </div>
-
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12 bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl p-8 text-center text-white"
-        >
-          <h3 className="text-2xl font-bold mb-2">함께 만들어봐요</h3>
-          <p className="text-blue-100 mb-6">새로운 프로젝트나 기회가 있다면 언제든 연락주세요.</p>
-          <a
-            href={`mailto:${personal.email}`}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-          >
-            <Send size={16} />
-            이메일 보내기
-          </a>
-        </motion.div>
       </div>
     </section>
   )

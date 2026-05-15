@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-400 py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
             <p className="font-mono text-white text-lg font-semibold mb-2">
@@ -72,11 +72,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs">
-          <p>© 2025 최윤정. All rights reserved.</p>
-          <p>백엔드 · 풀스택 웹 개발자</p>
         </div>
       </div>
     </footer>

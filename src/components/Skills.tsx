@@ -8,6 +8,7 @@ const tagColors: Record<string, string> = {
   teal: 'bg-teal-50 text-teal-700 border-teal-200',
   green: 'bg-emerald-50 text-emerald-700 border-emerald-200',
   indigo: 'bg-indigo-50 text-indigo-700 border-indigo-200',
+  violet: 'bg-violet-50 text-violet-700 border-violet-200',
 }
 
 const dotColors: Record<string, string> = {
@@ -17,6 +18,7 @@ const dotColors: Record<string, string> = {
   teal: 'bg-teal-500',
   green: 'bg-emerald-500',
   indigo: 'bg-indigo-500',
+  violet: 'bg-violet-500',
 }
 
 export default function Skills() {

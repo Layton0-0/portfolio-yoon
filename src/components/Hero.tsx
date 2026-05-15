@@ -56,9 +56,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-gray-500 text-lg max-w-2xl mx-auto mb-8 leading-relaxed"
+          className="text-gray-500 text-lg max-w-2xl mx-auto mb-8 leading-relaxed whitespace-pre-line"
         >
-          {personal.description}
+          {personal.subtitle}
         </motion.p>
 
         {/* Tags */}
