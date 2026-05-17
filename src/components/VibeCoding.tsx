@@ -9,13 +9,13 @@ function formatIntro(text: string): ReactNode[] {
   let segments: ReactNode[] = [text]
 
   for (const phrase of NO_BREAK_PHRASES) {
-    segments = segments.flatMap((segment, segIdx) => {
+    segments = segments.flatMap((segment, segIdx): ReactNode[] => {
       if (typeof segment !== 'string') return [segment]
 
       const parts = segment.split(phrase)
       if (parts.length === 1) return [segment]
 
-      return parts.flatMap((part, i) =>
+      return parts.flatMap((part, i): ReactNode[] =>
         i < parts.length - 1
           ? [
               part,
