@@ -1,5 +1,35 @@
+import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { vibeCoding } from '../data/portfolio'
+
+/** 줄바꿈 시 단어·제품명이 끊기지 않도록 고정 구문을 nowrap으로 감쌈 */
+const NO_BREAK_PHRASES = ['Cursor와 Claude Code', 'Claude Code', 'Harness 기법'] as const
+
+function formatIntro(text: string): ReactNode[] {
+  let segments: ReactNode[] = [text]
+
+  for (const phrase of NO_BREAK_PHRASES) {
+    segments = segments.flatMap((segment, segIdx) => {
+      if (typeof segment !== 'string') return [segment]
+
+      const parts = segment.split(phrase)
+      if (parts.length === 1) return [segment]
+
+      return parts.flatMap((part, i) =>
+        i < parts.length - 1
+          ? [
+              part,
+              <span key={`${phrase}-${segIdx}-${i}`} className="whitespace-nowrap">
+                {phrase}
+              </span>,
+            ]
+          : [part],
+      )
+    })
+  }
+
+  return segments
+}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -25,7 +55,9 @@ export default function VibeCoding() {
         >
           <p className="font-mono text-emerald-400 text-sm mb-2">$ ./vibe-coding --method=harness</p>
           <h2 className="text-3xl font-bold text-white mb-4">AI와 협업하는 개발 방식</h2>
-          <p className="text-slate-400 max-w-2xl">{vibeCoding.intro}</p>
+          <p className="text-slate-400 max-w-2xl text-pretty leading-relaxed">
+            {formatIntro(vibeCoding.intro)}
+          </p>
         </motion.div>
 
         {/* 3단계 플로우 */}
@@ -66,10 +98,10 @@ export default function VibeCoding() {
           className="mb-10"
         >
           <p className="text-xs font-mono text-slate-500 uppercase tracking-widest mb-4">실무 적용 현황</p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {vibeCoding.evidence.map((ev, i) => (
               <motion.div
-                key={ev.label}
+                key={`${ev.label}-${ev.value}`}
                 custom={i}
                 variants={fadeUp}
                 initial="hidden"
