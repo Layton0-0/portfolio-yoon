@@ -9,7 +9,7 @@ export const personal = {
   blog: 'https://layton0-0.tistory.com/',
   blogDisplay: 'layton0-0.tistory.com',
   subtitle:
-    'Spring Boot 기반 엔터프라이즈 시스템을 설계·운영하고,\nAI 보조 개발 방법론으로 개발 속도의 한계를 넘는 백엔드/풀스택 개발자입니다.',
+    'Spring Boot 백엔드 개발 4년차.\nAI 도구를 실무 전반에 직접 적용하고 있습니다.',
   heroTags: ['Java', 'Spring Boot', 'AWS', 'Docker', 'Vibe Coding'],
 }
 
@@ -79,7 +79,7 @@ export const techStack: TechCategory[] = [
     category: '협업 · 문서화',
     tag: '협업',
     color: 'violet',
-    items: ['Swagger / OpenAPI', 'Jira', 'Confluence', 'Git / GitLab', '사내 Wiki 운영'],
+    items: ['Swagger / OpenAPI', 'Jira', 'Microsoft Teams', 'Git / GitLab', '사내 Wiki 운영'],
   },
 ]
 
@@ -156,7 +156,7 @@ export const experience = {
       badgeColor: 'blue',
       role: 'Backend / Full-Stack · 운영·유지보수·연간 고도화',
       description:
-        '타이어 Master Data 코어 시스템 포함 3개 시스템 운영·고도화. 연구소·공장·SAP·수익성 분석을 잇는 연동 구조 전담.',
+        '타이어 Master Data 코어 시스템 포함 3개 시스템 운영·고도화. 연구소·공장·SAP·수익성 분석을 잇는 연동 구조 전담. Cursor + Claude Code 기반 Vibe Coding을 유지보수·연간 과제에 상시 적용.',
       achievements: [
         {
           title: '수익성 시뮬레이터 연동',
@@ -196,7 +196,7 @@ export const experience = {
       ],
       additionalBullets: [
         '메가존클라우드 협업 — 온프레미스 IDC → AWS EC2 이전',
-        '해외 법인 대상 영문 장애 안내 및 운영 커뮤니케이션',
+        '한국타이어 국내 사용자, 해외 법인 사용자 대상 영문 장애 안내 및 운영 커뮤니케이션',
       ],
       bullets: [],
       badges: ['Spring Boot', 'MyBatis', 'Oracle RDS', 'Jenkins', 'Docker', 'AWS EC2', 'ALB', 'Prometheus', 'Grafana', 'SAP EAI', 'AG Grid'],
@@ -239,7 +239,8 @@ export const vibeCoding = {
     },
   ],
   evidence: [
-    { label: '실무 적용', value: '그룹웨어 리뉴얼', detail: '8개월 → 2개월' },
+    { label: '실무 적용', value: '생산직 모바일 리뉴얼', detail: '8개월 → 2개월' },
+    { label: '실무 적용', value: '3개 시스템 운영·고도화', detail: '유지보수·연간 과제 상시' },
     { label: '사내 최초 도입', value: 'AI 개발 도구 공식화', detail: '팀 설득 → 전사 확산' },
     { label: '단독 풀스택', value: '자동 매매 시스템', detail: 'Spring Boot + Python + React' },
   ],
@@ -271,6 +272,25 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: '주식 자동 매매 수익 분석 시스템',
+    subtitle: '한국투자증권 Open API 기반 자동 매매 · 수익 분석',
+    period: '2026.03 – 2026.04',
+    type: '1인 Vibe Coding (Cursor + Claude Code)',
+    description:
+      '한국투자증권 Open API 연동 자동 매매 시스템. 기획·설계·개발·배포 전 과정 1인 완성.',
+    vibeCodingNote:
+      '설계 의도를 AI에 구조화 전달 → 결과를 원리 수준에서 검증. 멀티 스택 전 영역을 빠르게 완성한 1인 사례.',
+    bullets: [
+      'Spring Boot 매매 API — 한국투자증권 Open API 연동',
+      'Python 데이터 수집·예측 서비스 분리 구성',
+      'React + Vite 수익 분석 대시보드',
+      'Docker Compose + GitHub Actions CI/CD',
+    ],
+    badges: ['Vibe Coding', 'Spring Boot 3.2', 'Python', 'React 18', 'TypeScript', 'MariaDB', 'Docker'],
+    highlightBadge: 'Vibe Coding',
+    github: 'https://github.com/Layton0-0/auto-investment-project',
+  },
+  {
     name: 'Neekly Report',
     subtitle: 'LLM 기반 자연어 일정 추출 · 주간 리포트 자동화',
     period: '2025.07 – 2025.08',
@@ -299,25 +319,6 @@ export const projects: Project[] = [
     badges: ['LLM · AI', 'Spring Boot 3.5', 'Java 21', 'JPA', 'MariaDB', 'Ollama', 'Compose', 'Jenkins'],
     highlightBadge: 'LLM · AI',
     github: 'https://github.com/spec-up-project/BACKEND/tree/dev',
-  },
-  {
-    name: '주식 자동 매매 수익 분석 시스템',
-    subtitle: '한국투자증권 Open API 기반 자동 매매 · 수익 분석',
-    period: '2025.03 – 2025.04',
-    type: '1인 Vibe Coding (Cursor + Claude Code)',
-    description:
-      '한국투자증권 Open API 연동 자동 매매 시스템. 기획·설계·개발·배포 전 과정 1인 완성.',
-    vibeCodingNote:
-      '설계 의도를 AI에 구조화 전달 → 결과를 원리 수준에서 검증. 멀티 스택 전 영역을 빠르게 완성한 1인 사례.',
-    bullets: [
-      'Spring Boot 매매 API — 한국투자증권 Open API 연동',
-      'Python 데이터 수집·예측 서비스 분리 구성',
-      'React + Vite 수익 분석 대시보드',
-      'Docker Compose + GitHub Actions CI/CD',
-    ],
-    badges: ['Vibe Coding', 'Spring Boot 3.2', 'Python', 'React 18', 'TypeScript', 'MariaDB', 'Docker'],
-    highlightBadge: 'Vibe Coding',
-    github: 'https://github.com/Layton0-0/auto-investment-project',
   },
 ]
 

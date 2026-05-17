@@ -60,7 +60,7 @@ export default function About() {
             style={{ background: 'linear-gradient(to right, #2563eb, #0d9488)' }}
           />
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            Spring Boot 기반 엔터프라이즈 시스템부터 AI 보조 개발까지, 개발의 전 사이클을 주도합니다.
+            엔터프라이즈 백엔드를 설계하고 운영합니다. AI 도구는 이미 일하는 방식의 일부입니다.
           </p>
         </motion.div>
 
