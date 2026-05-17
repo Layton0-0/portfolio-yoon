@@ -230,7 +230,7 @@ export const vibeCoding = {
     {
       step: 2,
       title: 'AI 협업 구현',
-      desc: 'Cursor / Claude Code로 반복 패턴 자동화, 보일러플레이트 제거',
+      desc: 'Cursor / Claude Code로 반복 패턴 자동화',
     },
     {
       step: 3,
